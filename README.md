@@ -16,4 +16,4 @@ There is a lot of SwiftUI issues that will be worked on as new betas arrive. For
 * `ShareLink` to share the card image using an activity controller
 
 # Known issues:
-The `ShareLink` doesn't allow for now to save the image in your photo library. This might be a bug and I already filed a bug for that. Hope it's going to be fixed before the public release. 🤞
+The `ShareLink` doesn't allow for now to save the image to your photo library. This might be a bug and I already filed a radar for that. Hope it's going to be fixed before the public release. 🤞
