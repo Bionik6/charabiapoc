@@ -6,13 +6,13 @@ public struct ShareCharabiaView: View {
   private var cardColors: [Color] = [.blue, .yellow, .mint, .pink, .indigo, .orange, .teal, .gray]
   
   @Environment(\.dismiss) var dismiss
-  @State private var selectedColor: Color = .blue
-  @State private var showVerticalCard = true
   @Environment(\.colorScheme) var colorScheme
+  
   @State private var imageToShare: Image?
+  @State private var selectedColor: Color = .blue
   @State private var includeBackgroundPattern = true
   
-  public init(charabia: Charabia) {
+  init(charabia: Charabia) {
     self.charabia = charabia
   }
   
@@ -31,34 +31,39 @@ public struct ShareCharabiaView: View {
           VStack(spacing: 28) {
             VStack(spacing: 16) {
               COLORS_SELECTION
-              ToggleBackground
+              BACKGROUND_TOGGLE
             }.frame(width: 280)
             
-            ShareButton
+            SHARE_BUTTON
           }
         }
       }
       .navigationBarTitleDisplayMode(.inline)
       .navigationTitle("Share charabia")
-      .navigationBarItems(leading: Button(action: { dismiss() }, label: { Text("Dismiss") }))
-    }.onAppear {
+      .navigationBarItems(
+        leading: Button(action: { dismiss() }, label: { Text("Dismiss") }))
+    }
+    .onAppear {
       self.selectedColor = charabia.color
       let renderer = ImageRenderer(content: VERTICAL_CARD(radius: 0))
-      if let image = renderer.cgImage { self.imageToShare = Image(image, scale: 1, label: Text("hello")) }
+      if let image = renderer.cgImage { self.imageToShare = Image(image, scale: 1, label: Text("Charabia Image")) }
     }
   }
-  
+}
+
+
+// MARK: - SUBVIEWS
+extension ShareCharabiaView {
   private func VERTICAL_CARD(radius: CGFloat = 20) -> some View {
     VStack {
-      Header.padding(.top, 8)
+      HEADER.padding(.top, 8)
       VStack(spacing: 16) {
-        ImageInBox.padding(.bottom, 10)
-        Charade.padding(.horizontal, 12)
+        IMAGE_IN_BOX.padding(.bottom, 10)
+        CHARADE.padding(.horizontal, 12)
       }.padding(.vertical, 16)
-      Footer
+      FOOTER
     }
     .frame(width: 320)
-      // .padding(.vertical, 8)
     .background(
       GeometryReader { proxy in
         Color.clear.preference(key: SizePreferenceKey.self, value: proxy.size)
@@ -90,14 +95,14 @@ public struct ShareCharabiaView: View {
     }
   }
   
-  private var ToggleBackground: some View {
+  private var BACKGROUND_TOGGLE: some View {
     Toggle(isOn: $includeBackgroundPattern.animation(.spring())) {
       Text("Include pattern")
         .font(.system(size: 14, weight: .bold, design: .default))
     }
   }
   
-  private var ImageInBox: some View {
+  private var IMAGE_IN_BOX: some View {
     ZStack {
       RoundedRectangle(cornerRadius: 16, style: .continuous)
         .fill(selectedColor)
@@ -106,7 +111,7 @@ public struct ShareCharabiaView: View {
     }
   }
   
-  private var Charade: some View {
+  private var CHARADE: some View {
     VStack(spacing: 10) {
       VStack {
         Text("Gibberish".uppercased())
@@ -134,7 +139,7 @@ public struct ShareCharabiaView: View {
     }
   }
   
-  private var Header: some View {
+  private var HEADER: some View {
     HStack {
       HStack {
         KID_AVATAR_VIEW(kid: adji, size: CGSize(width: 50, height: 50), scheme: colorScheme, bgColor: selectedColor)
@@ -153,7 +158,7 @@ public struct ShareCharabiaView: View {
     .padding(.horizontal, 16)
   }
   
-  private var Footer: some View {
+  private var FOOTER: some View {
     HStack {
       Spacer()
       HStack(spacing: 4) {
@@ -168,7 +173,7 @@ public struct ShareCharabiaView: View {
     .padding(.bottom, 10)
   }
   
-  private var ShareButton: some View {
+  private var SHARE_BUTTON: some View {
     VStack {
       if let imageToShare {
         ShareLink(item: imageToShare, preview: SharePreview("charabia", image: imageToShare)) {
