@@ -34,7 +34,7 @@ public struct ShareCharabiaView: View {
               BACKGROUND_TOGGLE
             }.frame(width: 280)
             
-            SHARE_BUTTON
+            SHARE_BUTTON // is using the new ShareLink API
           }
         }
       }
@@ -113,29 +113,24 @@ extension ShareCharabiaView {
   
   private var CHARADE: some View {
     VStack(spacing: 10) {
-      VStack {
-        Text("Gibberish".uppercased())
-          .font(.avenirNext(.semiBold, size: 14))
-          .foregroundColor(Color.black.opacity(0.6))
-        Text(charabia.gibberish.firstUppercased)
-          .foregroundColor(Color.black)
-          .fixedSize(horizontal: false, vertical: true)
-          .multilineTextAlignment(.center)
-          .font(.lovelyKids(size: 36, fixed: true))
-      }
+      buildCharade(title: "Gibberish", value: charabia.gibberish)
       Image(systemName: "arrow.down")
         .foregroundColor(.orange)
         .font(.system(size: 20, weight: .medium, design: .default))
-      VStack {
-        Text("Meaning".uppercased())
-          .font(.avenirNext(.semiBold, size: 14))
-          .foregroundColor(Color.black.opacity(0.6))
-        Text(charabia.meaning.firstUppercased)
-          .fixedSize(horizontal: false, vertical: true)
-          .multilineTextAlignment(.center)
-          .font(.lovelyKids(size: 36, fixed: true))
-          .foregroundColor(Color.black)
-      }
+      buildCharade(title: "Meaning", value: charabia.meaning)
+    }
+  }
+  
+  func buildCharade(title: String, value: String) -> some View {
+    VStack {
+      Text(title.uppercased())
+        .font(.avenirNext(.semiBold, size: 14))
+        .foregroundColor(Color.black.opacity(0.6))
+      Text(value.firstUppercased)
+        .fixedSize(horizontal: false, vertical: true)
+        .multilineTextAlignment(.center)
+        .font(.lovelyKids(size: 36, fixed: true))
+        .foregroundColor(Color.black)
     }
   }
   
