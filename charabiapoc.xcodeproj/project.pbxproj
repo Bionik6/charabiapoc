@@ -11,6 +11,21 @@
 		4051CF582852460A0044A3E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051CF572852460A0044A3E3 /* ContentView.swift */; };
 		4051CF5A2852460B0044A3E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4051CF592852460B0044A3E3 /* Assets.xcassets */; };
 		4051CF5D2852460B0044A3E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4051CF5C2852460B0044A3E3 /* Preview Assets.xcassets */; };
+		4051CF6628524F190044A3E3 /* Charabia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051CF6528524F190044A3E3 /* Charabia.swift */; };
+		4051CF6828524F2A0044A3E3 /* Kid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051CF6728524F2A0044A3E3 /* Kid.swift */; };
+		4051CF6A285250690044A3E3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051CF69285250690044A3E3 /* Data.swift */; };
+		4051CF6C285253CC0044A3E3 /* CharabiaItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051CF6B285253CC0044A3E3 /* CharabiaItemView.swift */; };
+		4051CF70285254BB0044A3E3 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051CF6F285254BB0044A3E3 /* TextStyle.swift */; };
+		4051CF72285254DA0044A3E3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051CF71285254DA0044A3E3 /* Fonts.swift */; };
+		4051CF75285255D90044A3E3 /* Lovely-Kids.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4051CF74285255D90044A3E3 /* Lovely-Kids.otf */; };
+		4051CF782852624C0044A3E3 /* NavigationHeaderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051CF772852624C0044A3E3 /* NavigationHeaderStyle.swift */; };
+		4051CF7A285262A70044A3E3 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051CF79285262A70044A3E3 /* Color+Hex.swift */; };
+		4051CF7C285262FF0044A3E3 /* KidAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051CF7B285262FF0044A3E3 /* KidAvatarView.swift */; };
+		4051CF7E2852634C0044A3E3 /* DateUtils+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051CF7D2852634C0044A3E3 /* DateUtils+Formatting.swift */; };
+		4051CF8028526AF10044A3E3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051CF7F28526AF10044A3E3 /* String+Extension.swift */; };
+		4051CF82285270BC0044A3E3 /* ShareCharabiaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051CF81285270BC0044A3E3 /* ShareCharabiaView.swift */; };
+		4051CF84285273B20044A3E3 /* SizePreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051CF83285273B20044A3E3 /* SizePreferenceKey.swift */; };
+		405B7A422852AEB600510F23 /* VScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405B7A412852AEB600510F23 /* VScroll.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +34,22 @@
 		4051CF572852460A0044A3E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4051CF592852460B0044A3E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4051CF5C2852460B0044A3E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4051CF6528524F190044A3E3 /* Charabia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charabia.swift; sourceTree = "<group>"; };
+		4051CF6728524F2A0044A3E3 /* Kid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kid.swift; sourceTree = "<group>"; };
+		4051CF69285250690044A3E3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		4051CF6B285253CC0044A3E3 /* CharabiaItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharabiaItemView.swift; sourceTree = "<group>"; };
+		4051CF6F285254BB0044A3E3 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		4051CF71285254DA0044A3E3 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		4051CF74285255D90044A3E3 /* Lovely-Kids.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lovely-Kids.otf"; sourceTree = "<group>"; };
+		4051CF76285255F10044A3E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4051CF772852624C0044A3E3 /* NavigationHeaderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHeaderStyle.swift; sourceTree = "<group>"; };
+		4051CF79285262A70044A3E3 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		4051CF7B285262FF0044A3E3 /* KidAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidAvatarView.swift; sourceTree = "<group>"; };
+		4051CF7D2852634C0044A3E3 /* DateUtils+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateUtils+Formatting.swift"; sourceTree = "<group>"; };
+		4051CF7F28526AF10044A3E3 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		4051CF81285270BC0044A3E3 /* ShareCharabiaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCharabiaView.swift; sourceTree = "<group>"; };
+		4051CF83285273B20044A3E3 /* SizePreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePreferenceKey.swift; sourceTree = "<group>"; };
+		405B7A412852AEB600510F23 /* VScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VScroll.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +82,14 @@
 		4051CF542852460A0044A3E3 /* charabiapoc */ = {
 			isa = PBXGroup;
 			children = (
+				4051CF76285255F10044A3E3 /* Info.plist */,
+				4051CF73285255C50044A3E3 /* Resources */,
+				4051CF6D285254A40044A3E3 /* Utils */,
+				4051CF6428524F070044A3E3 /* Models */,
+				4051CF6328524EE40044A3E3 /* Views */,
 				4051CF552852460A0044A3E3 /* charabiapocApp.swift */,
+				4051CF81285270BC0044A3E3 /* ShareCharabiaView.swift */,
 				4051CF572852460A0044A3E3 /* ContentView.swift */,
-				4051CF592852460B0044A3E3 /* Assets.xcassets */,
 				4051CF5B2852460B0044A3E3 /* Preview Content */,
 			);
 			path = charabiapoc;
@@ -65,6 +101,49 @@
 				4051CF5C2852460B0044A3E3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4051CF6328524EE40044A3E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4051CF6B285253CC0044A3E3 /* CharabiaItemView.swift */,
+				4051CF7B285262FF0044A3E3 /* KidAvatarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4051CF6428524F070044A3E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4051CF6528524F190044A3E3 /* Charabia.swift */,
+				4051CF6728524F2A0044A3E3 /* Kid.swift */,
+				4051CF69285250690044A3E3 /* Data.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4051CF6D285254A40044A3E3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4051CF6F285254BB0044A3E3 /* TextStyle.swift */,
+				4051CF71285254DA0044A3E3 /* Fonts.swift */,
+				4051CF772852624C0044A3E3 /* NavigationHeaderStyle.swift */,
+				4051CF79285262A70044A3E3 /* Color+Hex.swift */,
+				4051CF7D2852634C0044A3E3 /* DateUtils+Formatting.swift */,
+				4051CF7F28526AF10044A3E3 /* String+Extension.swift */,
+				4051CF83285273B20044A3E3 /* SizePreferenceKey.swift */,
+				405B7A412852AEB600510F23 /* VScroll.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4051CF73285255C50044A3E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4051CF592852460B0044A3E3 /* Assets.xcassets */,
+				4051CF74285255D90044A3E3 /* Lovely-Kids.otf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4051CF75285255D90044A3E3 /* Lovely-Kids.otf in Resources */,
 				4051CF5D2852460B0044A3E3 /* Preview Assets.xcassets in Resources */,
 				4051CF5A2852460B0044A3E3 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +217,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4051CF72285254DA0044A3E3 /* Fonts.swift in Sources */,
+				4051CF6828524F2A0044A3E3 /* Kid.swift in Sources */,
+				4051CF6A285250690044A3E3 /* Data.swift in Sources */,
+				4051CF782852624C0044A3E3 /* NavigationHeaderStyle.swift in Sources */,
+				4051CF6628524F190044A3E3 /* Charabia.swift in Sources */,
+				4051CF7C285262FF0044A3E3 /* KidAvatarView.swift in Sources */,
+				4051CF8028526AF10044A3E3 /* String+Extension.swift in Sources */,
+				4051CF82285270BC0044A3E3 /* ShareCharabiaView.swift in Sources */,
+				4051CF7E2852634C0044A3E3 /* DateUtils+Formatting.swift in Sources */,
+				4051CF7A285262A70044A3E3 /* Color+Hex.swift in Sources */,
+				4051CF70285254BB0044A3E3 /* TextStyle.swift in Sources */,
 				4051CF582852460A0044A3E3 /* ContentView.swift in Sources */,
+				4051CF6C285253CC0044A3E3 /* CharabiaItemView.swift in Sources */,
+				405B7A422852AEB600510F23 /* VScroll.swift in Sources */,
 				4051CF562852460A0044A3E3 /* charabiapocApp.swift in Sources */,
+				4051CF84285273B20044A3E3 /* SizePreferenceKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,11 +358,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"charabiapoc/Preview Content\"";
+				DEVELOPMENT_TEAM = ZM7Z6QL6F3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = charabiapoc/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Charabia would like to save images into your photo library";
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Charabia would like to save images into your photo library";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Charabia would like to save images into your photo library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -281,6 +382,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.iciss.charabiapoc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -292,11 +394,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"charabiapoc/Preview Content\"";
+				DEVELOPMENT_TEAM = ZM7Z6QL6F3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = charabiapoc/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Charabia would like to save images into your photo library";
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Charabia would like to save images into your photo library";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Charabia would like to save images into your photo library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,6 +418,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.iciss.charabiapoc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
