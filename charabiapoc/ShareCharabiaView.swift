@@ -1,6 +1,5 @@
 import SwiftUI
 
-
 public struct ShareCharabiaView: View {
   private let charabia: Charabia
   private var cardColors: [Color] = [.blue, .yellow, .mint, .pink, .indigo, .orange, .teal, .gray]
@@ -25,7 +24,7 @@ public struct ShareCharabiaView: View {
           Spacer()
           
           VScrollView { VERTICAL_CARD() }
-          
+    
           Spacer()
           
           VStack(spacing: 28) {
@@ -40,8 +39,7 @@ public struct ShareCharabiaView: View {
       }
       .navigationBarTitleDisplayMode(.inline)
       .navigationTitle("Share charabia")
-      .navigationBarItems(
-        leading: Button(action: { dismiss() }, label: { Text("Dismiss") }))
+      .navigationBarItems(leading: Button(action: { dismiss() }, label: { Text("Dismiss") }))
     }
     .onAppear {
       self.selectedColor = charabia.color
@@ -50,7 +48,6 @@ public struct ShareCharabiaView: View {
     }
   }
 }
-
 
 // MARK: - SUBVIEWS
 extension ShareCharabiaView {
@@ -103,12 +100,12 @@ extension ShareCharabiaView {
   }
   
   private var IMAGE_IN_BOX: some View {
-    ZStack {
-      RoundedRectangle(cornerRadius: 16, style: .continuous)
-        .fill(selectedColor)
-        .frame(width: 80, height: 80)
-      Text(charabia.emoji).font(.system(size: 50, weight: .bold, design: .monospaced))
-    }
+    RoundedRectangle(cornerRadius: 16, style: .continuous)
+      .fill(selectedColor)
+      .frame(width: 80, height: 80)
+      .overlay(
+        Text(charabia.emoji).font(.system(size: 50, weight: .bold, design: .monospaced))
+      )
   }
   
   private var CHARADE: some View {
@@ -182,5 +179,22 @@ extension ShareCharabiaView {
         }
       }
     }
+  }
+}
+
+struct ShareCharabia_Previews: PreviewProvider {
+  static var previews: some View {
+    ShareCharabiaView(
+      charabia: Charabia(
+        id: "",
+        gibberish: "Ama youtiful",
+        meaning: "I'm beautiful",
+        emoji: "👸",
+        sayingDate: .now,
+        creationDate: .now,
+        color: .mint,
+        author: adji
+      )
+    )
   }
 }

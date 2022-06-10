@@ -8,7 +8,6 @@ struct ContentView: View {
     HStack(alignment: .top) {
       ScrollView {
         VStack(spacing: 8) {
-          // Text(" ").hidden() // Workaround to show the sharing modal
           LazyVGrid(columns: gridItems, spacing: 16) {
             ForEach(charabias) { charabia in
               VStack {
@@ -26,7 +25,8 @@ struct ContentView: View {
     .navigationHeaderStyle(kid: adji)
     .sheet(item: $selectedCharabia, content: { charabia in
       ShareCharabiaView(charabia: charabia)
-        .presentationDetents([.large])
+        .presentationDetents([.medium, .large])
+        .presentationDragIndicator(.visible)
     })
   }
   
